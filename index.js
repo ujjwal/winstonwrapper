@@ -10,6 +10,7 @@ var ConfigurableLogger = function() {
 
 util.inherits(ConfigurableLogger, winston.Logger);
 
+
 ConfigurableLogger.prototype.init = function(options) {
     this.exitOnError = false;
     var debugging = _.isBoolean(options.debug) && options.debug,
