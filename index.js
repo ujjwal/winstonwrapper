@@ -22,10 +22,6 @@ ConfigurableLogger.prototype.init = function(options) {
             json: false,
             timestamp: true
         });
-        this.handleExceptions(new winston.transports.Console({
-            json: false,
-            timestamp: true
-        }));
         this.info("event=consoleLoggingEnabled");
     }
     if (_.isString(options.outLogFile)) {
@@ -35,17 +31,11 @@ ConfigurableLogger.prototype.init = function(options) {
             json: false,
             timestamp: true
         });
-        this.handleExceptions(new winston.transports.File({
-            filename: options.outLogFile,
-            json: false,
-            timestamp: true,
-            maxsize: 104857600,
-            maxFiles: 10
-        }));
         this.info("loggingTo=" + options.outLogFile);
     }
 };
 
 var logger = new ConfigurableLogger();
+logger.emitErrs = false;
 
 module.exports = logger;

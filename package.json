@@ -1,23 +1,23 @@
 {
-  "name": "winstonwrapper",
-  "version": "0.0.1",
-  "description": "winstonwrapper ==============",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/ujjwal/winstonwrapper.git"
-  },
-  "author": "usarin@gmail.com",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ujjwal/winstonwrapper/issues"
-  },
-  "homepage": "https://github.com/ujjwal/winstonwrapper",
-  "dependencies": {
-    "underscore": "^1.6.0",
-    "winston": "^0.7.2"
-  }
+    "name": "winstonwrapper",
+    "version": "0.0.1",
+    "description": "winstonwrapper ==============",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/ujjwal/winstonwrapper.git"
+    },
+    "author": "usarin@gmail.com",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ujjwal/winstonwrapper/issues"
+    },
+    "homepage": "https://github.com/ujjwal/winstonwrapper",
+    "dependencies": {
+        "underscore": "^1.6.0",
+        "winston": "^0.7.3"
+    }
 }
