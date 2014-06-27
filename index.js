@@ -33,13 +33,13 @@ ConfigurableLogger.prototype.init = function(options) {
             level: level,
             filename: options.outLogFile,
             json: false,
+            maxsize: 10485760,
             timestamp: true
         });
         this.handleExceptions(new winston.transports.File({
             filename: options.outLogFile,
             json: false,
             timestamp: true,
-            maxsize: 104857600,
             maxFiles: 10
         }));
         this.info("loggingTo=" + options.outLogFile);
