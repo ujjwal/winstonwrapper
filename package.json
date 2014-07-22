@@ -17,7 +17,6 @@
     },
     "homepage": "https://github.com/ujjwal/winstonwrapper",
     "dependencies": {
-        "underscore": "^1.6.0",
-        "winston": "^0.7.3"
+        "bunyan": "^0.23.1"
     }
 }
